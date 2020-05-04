@@ -18,8 +18,16 @@
             {
                 name: 'Pegeot',
                 type: 'Bird',
-                age:  10
+                age:  5
             }
     ]
 
-    console.log(pets)
+
+// criando um filtro usando o metodo filter
+const novoPet = pets.filter((newPet)=>{
+    return newPet.age < 10
+})
+
+
+    console.log(pets);
+    console.log("Teste logico da funcao", novoPet)
