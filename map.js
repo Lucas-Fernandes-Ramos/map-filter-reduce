@@ -1,5 +1,11 @@
-
-const pets = [
+/**
+ * ******MAP******
+ * O método map() invoca a função callback passada por
+ * argumento para cada elemento do Array e devolve um 
+ * novo Array como resultado.
+ * Referencia: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+*/
+ const pets = [
     {
         name: 'Rex',
         type: 'Dog',
