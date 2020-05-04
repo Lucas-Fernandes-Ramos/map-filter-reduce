@@ -1,11 +1,4 @@
-/**
- * ******MAP******
- * O método map() invoca a função callback passada por
- * argumento para cada elemento do Array e devolve um 
- * novo Array como resultado.
- * Referencia: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map
-*/
- const pets = [
+const pets = [
     {
         name: 'Rex',
         type: 'Dog',
@@ -50,19 +43,4 @@
     }
 ]
 
-
-const petNames = pets.map((novoPetName)=>{
-    return novoPetName.name
-});
-console.log("Usando MAP:" , petNames)
-
-
-
-
-//Usando o metodo foreach 
-const foreachPetName  = []
-pets.forEach((petsName)=>{
-  foreachPetName.push(petsName.name);
-});
-
-console.log("Usando Foreach:" , foreachPetName);
+console.log(pets);
