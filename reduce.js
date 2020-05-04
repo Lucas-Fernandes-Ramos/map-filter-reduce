@@ -47,15 +47,22 @@ const totalIdade  = pets.reduce((total, petIdade)=>{
    return total + petIdade.weight
 },0);
 */
+/*
 const totalIdade1  = pets.reduce((total, pet)=>{
     return {
         totalAge: total.totalAge  + pet.age,
         totalIdade: total.totalIdade  + pet.weight,
     }
  },{totalAge: 0, totalIdade: 0});
- 
+*/ 
 
-
+const totalPesoDog = pets
+ .filter((pet)=>{
+        return pet.type === 'Bird';
+    })
+.reduce((total, pet)=>{
+       return total  + pet.weight;
+    }, 0);
 console.log(pets);
 
-console.log(totalIdade1);
+console.log(totalPesoDog);
