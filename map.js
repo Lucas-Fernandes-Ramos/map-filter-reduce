@@ -43,6 +43,8 @@ const pets = [
         weight: 0.01
     }
 ]
+const petNames = pets.map((novoPetName)=>{
+    return novoPetName.name
+})
 
-
-console.log(pets)
+console.log(petNames)
