@@ -21,13 +21,13 @@ const pets = [
         name: 'Pegeot',
         type: 'Bird',
         age:  5,
-        weight: 0.01
+        weight: 16
     },
     {
         name: 'Pegeot',
         type: 'Bird',
         age:  5,
-        weight: 0.01
+        weight: 1
     },
     {
         name: 'Pegeot',
@@ -39,8 +39,23 @@ const pets = [
         name: 'Pegeot',
         type: 'Bird',
         age:  5,
-        weight: 0.01
+        weight: 3
     }
 ]
+/*
+const totalIdade  = pets.reduce((total, petIdade)=>{
+   return total + petIdade.weight
+},0);
+*/
+const totalIdade1  = pets.reduce((total, pet)=>{
+    return {
+        totalAge: total.totalAge  + pet.age,
+        totalIdade: total.totalIdade  + pet.weight,
+    }
+ },{totalAge: 0, totalIdade: 0});
+ 
+
 
 console.log(pets);
+
+console.log(totalIdade1);
